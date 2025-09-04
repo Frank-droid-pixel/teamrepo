@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    Font-family: sans-serif;
+    box-sizing: border-box
+}
+body{
+    background: #222;
+}
+.card {
+    width:90%;
+    max-width: 1512px;
+    background: linear-gradient(135deg, #2980B9, #2980B9);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+}
+.search {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 4.5%;
+}
+.search input {
+    border: 0;
+    outline: 0;
+    background-color: black;
+    opacity: 40%;
+    padding: 10px;
+    color: #ffffff;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-left: 16px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+#search-btn {
+    border: 0;
+    outline: 0;
+    background-color: black;
+    opacity: 40%;
+    border-radius: 30px;
+    width: 90px;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+    gap: 10px;
+}
+.search-btn img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.weather {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    gap: 450px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+    margin-bottom: 20px
+}
+h1 {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.temperature {
+    width: 20%;
+    /* background: black; */
+    /* opacity: 40%; */
+    color: white;
+    border-radius: 20px;
+    margin-left: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.date {
+    width: 20%;
+    background: black;
+    opacity: 40%;
+    color: white;
+    border-radius: 20px;
+    /* margin-left: 250px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-right: 30px;
+    gap: 30px
+}
+.timezone {
+    display: flex;
+    flex-direction: row;
+    
+}
+.forecast  {
+    background-color: black;
+    opacity: 40%;
+    border: 0;
+    border-radius: 20px;
+    margin: 50px;
+    justify-content: center;
+    /* display: flex; */
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 20%
+}
+.cards1 {
+    display: flexS;
+    justify-content: center;
+    align-items: center;
+}
+.detail1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 20px;
+    
+}
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity{
+    font-size: 28px;
+    margin-top: -6px;
+}
