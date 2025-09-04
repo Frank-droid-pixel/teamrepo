@@ -1,88 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real-time weather app</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-time Weather App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Search City" spellcheck="false" >
-            <button id="search-btn"><img src="loupe.png" width="20px">Search</button>
+  <div class="card">
+    <!-- Search -->
+    <form class="search">
+      <input type="text" id="city-input" placeholder="Search City" spellcheck="false">
+      <button type="submit" id="search-btn">
+        <!-- <img src="loupe.png" width="20px"> -->
+        Search
+      </button>
+    </form>
+
+    <!-- Weather Section -->
+    <div class="weather" id="weather-data">
+      <div class="temperature">
+        <!-- <img src="rain.png" width="100px" class="weather-icon"> -->
+        <img class="weather-icon" width="100px">
+        <h1 class="temperature">--°C</h1>
+        <h3 class="city">City</h3>
+        <h4 class="country">Country</h4>
+      </div>
+
+      <div class="date">
+        <h3 class="time">--:--</h3>
+        <h4 class="day">--</h4>
+        <hr width="100px" opacity="0%">
+        <div class="timezone">
+          <h4 class="timezone-text">--</h4>
         </div>
-        <div class="weather">
-            <div class="temperature">
-                <img src="rain.png" width="100px" class="weather-icon">
-                    <h1 class="text">18°C</h1>
-                    <h3 class="city">Bamenda</h3>
-                    <h4>Northwest, Cameroon</h4>
-            </div>
-            <div class="date">
-                <h3>8:00AM</h3>
-                <h4>Friday, 5th Sept 2025</h4>
-                <hr  width="100px" opacity="0%">
-                <div class="timezone">
-                    <h4>GMT+1</h4>
-                </div>
-            </div>
-        </div>
-        <div class="cards1">
-                <div class="forecast">
-                    <h2>Today's Forecast</h2>
-                    <hr width="1350px" color="white" opacity="50%">
-                    <div class="detail1">
-                        <div class="col">
-                            <img src="humidity.png" class="icon"> 
-                            <div>
-                                <p>Humidity</p>
-                                <p class="humidity">100%</p>  
-                            </div>
-                        </div>
-                        <div class="col">
-                            <img src="windy.png"class="icon">
-                            <div>
-                                <p>Wind</p>
-                                <p class="humidity">1m/h</p>  
-                            </div>
-                        </div>
-                        <div class="col">
-                            <img src="temperature.png"class="icon">
-                            <div>
-                                <p>Feel</p>
-                                <p class="humidity">18°C</p>  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detail1">
-                        <div class="col">
-                            <img src="air.png"class="icon">
-                            <div>
-                                <p>Presssure</p>
-                                <p class="humidity">29.99 in</p>  
-                            </div>
-                        </div>
-                        <div class="col">
-                            <img src="visibility.png"class="icon">
-                            <div>
-                                <p>visibilty</p>
-                                <p class="humidity">2.4 mi</p>  
-                            </div>
-                        </div>
-                        <div class="col">
-                            <img src="rain.png"class="icon">
-                            <div>
-                                <p>Chance 
-                                    <br>of Rain</p>
-                                <p class="humidity">100%</p>  
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-        </div>
-        
+      </div>
     </div>
+
+    <!-- Forecast Details -->
+    <div class="cards1">
+      <div class="forecast">
+        <h2>Today's Forecast</h2>
+        <hr width="100%" color="white" opacity="50%">
+        <div class="detail1">
+          <div class="col">
+            <!-- <img src="humidity.png" class="icon"> -->
+            <div>
+              <p>Humidity</p>
+              <p class="humidity">--%</p>
+            </div>
+          </div>
+          <div class="col">
+            <!-- <img src="windy.png" class="icon"> -->
+            <div>
+              <p>Wind</p>
+              <p class="wind">-- m/s</p>
+            </div>
+          </div>
+          <div class="col">
+            <!-- <img src="temperature.png" class="icon"> -->
+            <div>
+              <p>Feels Like</p>
+              <p class="feels-like">--°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="detail1">
+          <div class="col">
+            <!-- <img src="air.png" class="icon"> -->
+            <div>
+              <p>Pressure</p>
+              <p class="pressure">-- hPa</p>
+            </div>
+          </div>
+          <div class="col">
+            <!-- <img src="visibility.png" class="icon"> -->
+            <div>
+              <p>Visibility</p>
+              <p class="visibility">-- km</p>
+            </div>
+          </div>
+          <div class="col">
+            <!-- <img src="rain.png" class="icon"> -->
+            <div>
+              <p>Description</p>
+              <p class="description">--</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="weather.js">
+
+  </script>
 </body>
 </html>
